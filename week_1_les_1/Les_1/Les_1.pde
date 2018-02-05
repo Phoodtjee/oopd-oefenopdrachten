@@ -126,13 +126,23 @@ int[] telElementenOp(int[] array1, int[] array2) {
 }
 */
 //OEFENINGEN Arrays bouwen B
+/*
+void setup() {
+  int[] array1 = {1921, 4, 424};
+  int[] array2 = {10, 12, 232};
+  println(maakMaxArray(array1, array2));
+}
 int[] maakMaxArray(int[] array1, int[] array2) {
-      int[] maxArray = new int[array1.length];
+      int[] maxArray;
   if(array1.length>array2.length) {
-      int[] maxArray = new int[array1.length];
+      maxArray = new int[array1.length];
   }
   else{
-      int[] maxArray = new int[array2.length];
+      maxArray = new int[array2.length];
+  }
+  for(int i = 0; i < maxArray.length; i++) {
+    maxArray[i] = max(array1[i], array2[i]);
   }
   return maxArray;
 }
+*/
