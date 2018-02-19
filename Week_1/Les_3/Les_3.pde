@@ -1,9 +1,9 @@
 //A
 //OPGAVE DAMSTEEN 
- Damsteen[] damstenen = new Damsteen[]{new Damsteen(100, 130, #FFFFFF, 50),
-                                       new Damsteen(180, 130, #FFFFFF, 50), 
-                                       new Damsteen(100, 200, #000000, 50), 
-                                       new Damsteen(180, 200, #000000, 50)};
+ Damsteen[] damstenen = new Damsteen[]{new Damsteen(100, 100, #FFFFFF, 200),
+                                       new Damsteen(300, 100, #FFFFFF, 200), 
+                                       new Damsteen(100, 300, #000000, 200), 
+                                       new Damsteen(300, 300, #000000, 200)};
 
 void setup() {
   size(400, 400);
