@@ -13,6 +13,6 @@ void setup() {
 }
 
 void draw() {
-  int s1HuidigePositie = bepaalSliderPositie(s1X, s1Breedte, s1NPosities);
+  int s1HuidigePositie = slider1.bepaalSliderPositie(s1X, s1Breedte, s1NPosities);
   slider1.tekenSlider(s1X, s1Y, s1Breedte, s1Hoogte, s1HuidigePositie, s1NPosities);  
 }

@@ -1,9 +1,9 @@
 class Slider {
-  float xpos;
-  float ypos; 
-  float sliderWidth;
-  float sliderHeight;
-  float aantalPosities;
+  float xpos,
+        ypos,
+        sliderWidth,
+        sliderHeight,
+        aantalPosities;
   
   Slider(float positieX, float positieY, float sliderBreedte, float sliderHoogte, float aantalPosities) {
     this.xpos = positieX;
@@ -23,4 +23,22 @@ class Slider {
     fill(#2257F0);
     rect(x + positie * blokjeBreedte, y, blokjeBreedte, hoogte);  
   }
+  
+  int bepaalSliderPositie(float x, float breedte, int nPosities) {
+    float blokjeBreedte = breedte / nPosities;
+    
+    if (mouseX < x) {
+     return 0;
+    }
+    else if (mouseX >= breedte + x) {
+      return nPosities - 1;
+    }
+    else {
+      return floor((mouseX  - x) / blokjeBreedte);
+    } 
+  }
+  String toString() {
+    return "dit is een mooi stukje tekst";
+  }
+
 }

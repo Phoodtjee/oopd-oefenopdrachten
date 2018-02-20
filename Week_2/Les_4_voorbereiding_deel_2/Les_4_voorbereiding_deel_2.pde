@@ -27,6 +27,9 @@ class Slider {
     this.sliderHeight = sliderHoogte;
     this.aantalPosities = aantalPosities;
   }
+  void tekenSlider(){
+    
+  }
 }
 
 Slider slider1 = new Slider(s1X, s1Y, s1Breedte, s1Hoogte, s1NPosities);

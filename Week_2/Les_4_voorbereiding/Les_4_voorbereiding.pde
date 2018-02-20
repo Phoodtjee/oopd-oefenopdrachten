@@ -14,6 +14,7 @@ void draw() {
   for(int i=0;i<damstenen.length;i++){
     damstenen[i].tekenStenen();
   }
+  println(damstenen[2].toString());
 }
                                     
 class Damsteen {
@@ -39,5 +40,9 @@ class Damsteen {
          stroke(0);      }
     ellipseMode(CENTER);
     ellipse(this.xpos, this.ypos, this.diameter, this.diameter);
+  }
+  
+  String toString() {
+    return "xpositie =  " + this.xpos + ", en ypositie = " + this.ypos;
   }
 }
