@@ -1,20 +1,25 @@
+import java.util.Random;
 
-
-import processing.core.PApplet;
-
-public class ProcessingProgramma extends PApplet{
-
-	public static void main(String[] args) {
-		PApplet.main(new String[] {"ProcessingProgramma"} );
-	}
-	public void settings() {
-		fullScreen();
-	}
+public class ProcessingProgramma{
 	public void setup() {
-		fill(100, 100, 255);
-		rect(0, 0, width, height);
-		textSize(100);
-		fill(255);
-		text(":(", height/6, width/4);
+		Dobbelsteen steen1 = new Dobbelsteen();
+		System.out.println(steen1.waarde);
+		System.out.println("Juist");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
+class Dobbelsteen {
+	double waarde;
+	
+	Dobbelsteen() {
+		Random rand = new Random();
+		waarde = rand.nextInt(6)+1;
+	}
+	
+	public String toString() {
+		return("De gedobbelde waarde is" + waarde);
 	}
 }
